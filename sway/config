@@ -7,7 +7,7 @@
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
-set $mod Mod1
+set $mod Mod5
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -43,6 +43,14 @@ output * bg ~/.backgrounds/skull-background.png fill
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 ### Input configuration
+
+input "type:touchpad" {
+    natural_scroll enabled
+}
+
+input * {
+    xkb_layout "gb"
+} 
 #
 # Example configuration:
 #
