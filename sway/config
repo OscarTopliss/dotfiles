@@ -91,7 +91,19 @@ input * {
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    #bindsym $mod+Shift+e exec swaynag -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+Shift+e exec swaynag -t warning \
+        -m 'Hello. Do you really want to exit sway? This will end your Wayland session.' \
+        -b 'Lock' 'exec swaylock' \
+        -b 'Shutdown' 'systemctl -i poweroff' \
+        -b 'Reboot' 'systemctl -i reboot' \
+        -b 'Yes, exit sway' 'swaymsg exit' \
+        --button-background=#000000 \
+        --button-text=#DDDDDD \
+        --button-border-size=1px \
+        --border=#DDDDDD \
+        --text=#DDDDDD \
+        --background=#000000 \
 #
 # Moving around:
 #
