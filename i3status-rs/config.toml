@@ -8,13 +8,20 @@ idle_fg = "#abcdef"
 
 [icons]
 icons = "awesome4"
-[icons.overrides]
-bat = ["|E|", "|_|", "|=|", "|F|"]
-bat_charging = "|^| "
+#[icons.overrides]
+#bat = ["|E|", "|_|", "|=|", "|F|"]
+#bat_charging = "|^| "
 
 [[block]]
 block = "battery"
 format = " $icon $percentage "
+
+[[block]]
+block = "sound"
+#format = " $icon $volume "
+max_vol = 100
+
+
 
 #[[block]]
 #block = "cpu"
