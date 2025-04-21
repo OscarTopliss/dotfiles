@@ -145,21 +145,21 @@ bindsym $mod+Shift+e exec swaynag -t warning \
     bindsym $mod2+$up focus up
     bindsym $mod2+$right focus right
     # Or use $mod+[up|down|left|right]
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
+    bindsym $mod2+Left focus left
+    bindsym $mod2+Down focus down
+    bindsym $mod2+Up focus up
+    bindsym $mod2+Right focus right
 
     # Move the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
+    bindsym $mod2+Shift+$left move left
+    bindsym $mod2+Shift+$down move down
+    bindsym $mod2+Shift+$up move up
+    bindsym $mod2+Shift+$right move right
     # Ditto, with arrow keys
-    bindsym $mod+Shift+Left move left
-    bindsym $mod+Shift+Down move down
-    bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
+    bindsym $mod2+Shift+Left move left
+    bindsym $mod2+Shift+Down move down
+    bindsym $mod2+Shift+Up move up
+    bindsym $mod2+Shift+Right move right
 #
 # Workspaces:
 #
