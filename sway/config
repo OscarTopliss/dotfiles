@@ -42,6 +42,25 @@ bindsym $mod2+Ctrl+k move workspace to output top
 bindsym $mod2+Ctrl+j move workspace to output bottom
 
 
+# Screenshot config
+# inspired by antyhrabia at https://www.reddit.com/r/swaywm/comments/pdyx0w/is_there_a_way_i_can_take_screenshots/
+
+set $screenshot 1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard
+mode "$screenshot" {
+    bindsym 1 exec 'grim -g "$(slurp)" ~/Pictures/s_$(date +"%Y%m%d%H%M%S").png', mode "default"
+    bindsym 2 exec 'grim ~/Pictures/s_$(date +"%Y%m%d%H%M%S").png', mode "default"
+    bindsym 3 exec 'grim -g "$(slurp)" - | wl-copy', mode "default"
+    bindsym 4 exec 'grim - | wl-copy', mode "default"
+
+# back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+p mode "default"
+}
+
+bindsym $mod+p mode "$screenshot"
+
+
  
 ### Idle configuration
 #
