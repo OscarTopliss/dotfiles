@@ -55,10 +55,10 @@ mode "$screenshot" {
 # back to normal: Enter or Escape
     bindsym Return mode "default"
     bindsym Escape mode "default"
-    bindsym $mod+p mode "default"
+    bindsym $mod2+p mode "default"
 }
 
-bindsym $mod+p mode "$screenshot"
+bindsym $mod2+p mode "$screenshot"
 
 
  
