@@ -2,6 +2,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=2000
 SAVEHIST=20000
+EDITOR=vim
 unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install

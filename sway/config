@@ -67,11 +67,11 @@ bindsym $mod2+p mode "$screenshot"
 # Example configuration:
 #
  exec swayidle -w \
-          timeout 300 'swaylock'
+          timeout 300 'swaylock -f'
  #         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
  #         before-sleep 'swaylock -f -c 000000'
 
-bindsym Mod4+l exec swaylock
+bindsym Mod4+l exec swaylock -f
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
