@@ -19,6 +19,6 @@ alias tree="tree -C"
 
 # Prompt
 
-PROMPT='%F{green}%n@%m [%f%F{blue}%~%f%F{green}]%f
-%F{green}$%f '
+PROMPT='%F{green}┌%n@%m [%f%F{blue}%~%f%F{green}]%f
+%F{green}└─$%f '
 
