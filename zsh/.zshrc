@@ -17,6 +17,20 @@ alias cpp-comp="g++ -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-
 
 alias tree="tree -C"
 
+alias gc="git commit"
+
+alias gl="git pull"
+
+alias gc="git commit"
+
+alias ga="git add"
+
+alias gca="git commit -a"
+
+alias gp="git push"
+
+alias g="git commit -a ; git push"
+
 # Prompt
 
 PROMPT='%F{green}┌%n@%m [%f%F{blue}%~%f%F{green}]%f

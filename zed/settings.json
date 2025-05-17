@@ -8,6 +8,9 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "theme": {
