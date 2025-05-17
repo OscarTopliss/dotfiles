@@ -9,8 +9,8 @@ bindkey -v
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/oscar/.zshrc'
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # End of lines added by compinstall
 
 alias cpp-comp="g++ -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion"
