@@ -33,6 +33,6 @@ alias g="git commit -a ; git push"
 
 # Prompt
 
-PROMPT='%F{green}┌%n@%m [%f%F{blue}%~%f%F{green}]%f
-%F{green}└─$%f '
+PROMPT='%B%F{green}┌%n@%m [%f%F{blue}%~%f%F{green}]%f
+%F{green}└─$%f%b '
 
