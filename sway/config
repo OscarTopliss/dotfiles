@@ -9,6 +9,8 @@
 # Logo key. Use Mod1 for Alt.
 set $mod Mod5
 set $mod2 Mod1
+set $cli-editor nvim
+set $editor code
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -22,7 +24,7 @@ set $menu wmenu-run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /run/current-system/sw/share/backgrounds/sway/)
-output * bg ~/.backgrounds/skull-background.png fill
+output * bg ~/.backgrounds/Luna.jpg fill
 #
 # Example configuration:
 #
@@ -40,6 +42,9 @@ bindsym $mod2+Ctrl+l move workspace to output right
 bindsym $mod2+Ctrl+h move workspace to output left
 bindsym $mod2+Ctrl+k move workspace to output top
 bindsym $mod2+Ctrl+j move workspace to output bottom
+
+# Editor config
+bindsym $mod+c exec code
 
 
 # Screenshot config
@@ -270,6 +275,13 @@ bindsym $mod+r mode "resize"
     bindsym Print exec grim
 
 #
+# Other app Bindings:
+#
+
+    #Firefox
+    bindsym $mod+q exec firefox
+
+#
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
@@ -283,8 +295,8 @@ bar {
 
     colors {
         statusline #ffffff
-        background #323232
-        inactive_workspace #323232ff #323232ff #999999
+        background #000000
+        inactive_workspace #323232ff #323232ff #eeeeee
     }
 }
 
