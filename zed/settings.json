@@ -7,29 +7,73 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "buffer_font_family": ".ZedMono",
+  // "soft_wrap": "preferred_line_length",
+  "git_panel": {
+    "dock": "left",
+  },
+  "toolbar": {
+    "agent_review": false,
+  },
+  "show_whitespaces": "selection",
+  "indent_guides": {
+    "coloring": "indent_aware",
+    "background_coloring": "disabled",
+  },
+  "disable_ai": true,
   "scrollbar": {
     "diagnostics": "none",
-    "cursors": false
+    "cursors": false,
   },
   "use_autoclose": false,
   "vim_mode": true,
   "vim": {
-    "toggle_relative_line_numbers": true
+    "cursor_shape": {
+      "insert": "inherit",
+    },
+    "toggle_relative_line_numbers": true,
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "theme": {
-    "mode": "system",
-    "light": "Ayu Dark",
-    "dark": "One Dark"
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Ayu Dark",
   },
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "wrap_guides": [80, 120],
-  "relative_line_numbers": true
+  "relative_line_numbers": "enabled",
+  "experimental.theme_overrides": {
+    "background.appearance": "blurred",
+    "background": "#00000090",
+    "editor.background": "#00000030",
+    "editor.gutter.background": "#00000030",
+    "tab_bar.background": "#00000030",
+    "terminal.background": "#00000030",
+    "toolbar.background": "#00000030",
+    "tab.active_background": "#28282820",
+    "tab.inactive_background": "#00000000",
+    "status_bar.background": "#00000030",
+    "title_bar.background": "#00000090",
+    "panel.background": "#00000030",
+    "border.variant": "#00000000",
+    "scrollbar.track.border": "#00000000",
+    "editor.active_line.background": "#00000000",
+  },
+  "lsp": {
+    "texlab": {
+      "initialization_options": {
+        "build": {
+          "onSave": false,
+        },
+        "root_directory": null,
+      },
+    },
+  },
 }

@@ -31,6 +31,10 @@ alias gp="git push"
 
 alias g="git commit -a ; git push"
 
+alias ls="ls --color"
+
+alias grep="grep --color"
+
 # Prompt
 
 PROMPT='%B%F{green}┌%n@%m [%f%F{blue}%~%f%F{green}]%f
